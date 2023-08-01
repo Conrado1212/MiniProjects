@@ -1,0 +1,55 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: grey;
+    color: dark;
+    font-size: 1rem;
+    line-height: 1;
+}
+h4{
+text-transform: capitalize;
+line-height: 1;
+
+font-size: 48px;
+}
+.container{
+    text-align: center;
+    display: grid;
+   position: relative;
+    min-height: 50vh;
+    place-items: center;
+    top: 25%;
+}
+#amount{
+    font-size: 7rem;
+    font-weight: bolder;
+}
+.buttons{
+    display: inline;
+  padding: 1%;
+}
+.btn{
+    text-transform: uppercase;
+    background: transparent;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: azure;
+    font-size: 16px;
+    padding: 2% 0;
+    text-align: center;
+    width: 150px;
+    margin-right: 10px;
+}
+.btn:hover{
+    font-size: 18px;
+    background-color: black;
+    cursor: pointer;
+    color: azure;
+    border: 3px solid azure;
+}
