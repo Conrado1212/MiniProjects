@@ -1,0 +1,118 @@
+body{
+    font-family: sans-serif;
+    background-color: azure;
+    color: dark;
+    font-size: 1rem;
+    line-height: 1;
+}
+nav{
+    background-color: aliceblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-header{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-btn{
+    background: transparent;
+background-color: transparent;
+cursor: pointer;
+font-size: 20px;
+border: none;
+transition: all 0.3s linear;
+}
+.nav-btn:hover{
+    font-size: 22px;
+    transform: rotate(90deg);
+    color: aqua;
+}
+.nav-logo{
+    height: 75px;
+    background-color: transparent;
+    border-radius: 15%;
+    border: 2px solid lightcyan;
+}
+.links a{
+    font-size:20px;
+    display: block;
+    text-transform: capitalize;
+    padding: 0.5rem 1rem;;
+    color: black;
+    transition: all 0.3s linear;
+    letter-spacing: 0.1rem;
+    cursor:pointer;
+    
+}
+.links a:hover{
+    font-size:22px;
+    background-color: aqua;
+    padding-left: 1.5rem;
+}
+.social{
+    display: none;
+}
+.links{
+   height: 0;
+   overflow: hidden;
+   transition: all 0.3s linear;
+}
+.show-links{
+    height: 150px;
+}
+@media screen and (min-width: 800px) {
+    .navbar {
+        max-width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    .nav-header{
+     
+       
+    }
+    .nav-btn{
+        display: none;
+    }
+    .links{
+        height: auto;
+        display: flex;
+    }
+    .links a{
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    .links a:hover{
+       padding: 0;
+        background:transparent;
+    }
+    .social{
+        display: flex;
+       
+    }
+    .social a{
+        text-decoration: none;
+        color: lightskyblue;
+        margin: 0 0.5rem;
+    }
+    .social a:hover{
+    font-weight: bolder;
+    color: bisque;
+    }
+}
