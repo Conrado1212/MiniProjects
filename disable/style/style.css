@@ -1,0 +1,14 @@
+table{
+    text-align: center;
+
+}
+.input:disabled{
+    background-color: bisque;
+    border:solid 1px blue;
+}
+td.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    background-color: bisque;
+    border:solid 1px blue;
+  }
