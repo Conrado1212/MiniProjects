@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.navBar{
+    width: 17%;
+   letter-spacing: 0.2px;
+   position: absolute;
+   height: 100%;
+   background-color: aqua;
+}
+.navBar h1{
+    font-size: 32px;
+    color: aliceblue;
+}
+.navBar h1 i{
+    font-size: 24px;
+}
+.db{
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    filter: brightness(50%);
+}
