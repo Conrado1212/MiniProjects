@@ -8,25 +8,80 @@
 }
 ul{
 list-style: none;
+position: relative;
 }
 ul li a{
     text-decoration: none;
     color: white;
-    
+    font-size: 24px;
+    display: block;
+    padding: 10px 0;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+ul li a:hover{
+    color: aqua;
+    border-left: 5px solid  aqua;
+}
+ul li a i{
+    width: 50px;
+    font-size: 24px;
+    text-align: center;
 }
 .navBar{
-    width: 17%;
+    width: 250px;
    letter-spacing: 0.2px;
    position: absolute;
    height: 100%;
-   background-color: aqua;
+    border-right: 1px solid gray;
+    transition: 0.5s ease;
+    transform: translateX(0);
+    backdrop-filter: blur(10px);
+}
+.button-menu{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    top: 10px;
+    height: 35px;
+    width: 32px;
+    left: 20px;
+}
+.button-menu i{
+    color: aliceblue;
+    font-size: 36px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+.button-menu i:hover{
+    z-index: 1;
+    color: aqua;
+}
+#hide:checked ~ .button-menu i{
+    color: black;
+}
+#hide{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+#hide:checked ~ .navbar{
+    transform: translateX(-250px);
 }
 .navBar h1{
-    font-size: 32px;
+    font-size: 36px;
     color: aliceblue;
+    text-align: center;
+    padding:  10px 0;
+    padding-right: 25px;
+    pointer-events: none;
 }
 .navBar h1 i{
-    font-size: 24px;
+    font-size: 32px;
+    text-align: center;
+    width: 50px;
+    position: absolute;
 }
 .db{
     background-image: url(../img/back.jpg);
