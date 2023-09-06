@@ -37,8 +37,9 @@ ul li a i{
     transition: 0.5s ease;
     transform: translateX(0);
     backdrop-filter: blur(10px);
+    left:0;
 }
-.button-menu{
+label{
     position: absolute;
     cursor: pointer;
     z-index: 1;
@@ -47,27 +48,48 @@ ul li a i{
     width: 32px;
     left: 20px;
 }
-.button-menu i{
+label #end, label #start{
     color: aliceblue;
     font-size: 36px;
-    position: absolute;
+   position: absolute;
     cursor: pointer;
     z-index: 1;
 }
-.button-menu i:hover{
+label #start{
+    left: 200px;
+    transition-delay: 0.4s;
+   
+}
+label #start:hover{
     z-index: 1;
     color: aqua;
 }
-#hide:checked ~ .button-menu i{
-    color: black;
+label #end:hover{
+    z-index: 1;
+    color: aqua;
 }
-#hide{
+#end{
     display: none;
-    visibility: hidden;
-    -webkit-appearance: none;
+    transition: all .5s ease;
+    position: absolute;
+    z-index:1;
+   
 }
-#hide:checked ~ .navbar{
-    transform: translateX(-250px);
+#check{
+    display: none;
+   
+}
+#check:checked ~ label #start{
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s ease;
+}
+#check:checked ~ label #end{
+    display: block;
+    transition: 1s ease;
+}
+#check:checked ~ .navbar{
+   left: -250px;
 }
 .navBar h1{
     font-size: 36px;
