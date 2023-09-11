@@ -19,7 +19,7 @@ ul li a{
     font-weight: 700;
     text-transform: capitalize;
 }
-ul li a:hover{
+.active, .tab:hover{
     color: aqua;
     border-left: 5px solid  aqua;
 }
