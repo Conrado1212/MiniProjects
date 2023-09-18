@@ -113,3 +113,35 @@ label #end:hover{
     background-position: center;
     filter: brightness(50%);
 }
+.top{
+    transition: 0.5s ease;
+    height: 100%;
+    margin-left: 250px;
+    display: flex;
+   
+    padding: 0.5%;
+}
+#check:checked ~ .top{
+    margin-left: 50px;
+ }
+ .search{
+     text-align: center;
+     width: 100%;
+    
+ }
+ .input-field{
+     padding: 7px 0;
+     width: 30%;
+     text-align: center;
+  
+ }
+ .input-field:is(:focus, :valid) {
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: aqua;
+   
+}
+.line{
+text-align: right;
+}
+
