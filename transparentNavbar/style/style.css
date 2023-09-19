@@ -125,15 +125,15 @@ label #end:hover{
     margin-left: 50px;
  }
  .search{
-     text-align: center;
+     text-align: right;
      width: 100%;
     
  }
  .input-field{
      padding: 7px 0;
-     width: 30%;
+     width: 50%;
      text-align: center;
-  
+     
  }
  .input-field:is(:focus, :valid) {
     font-size: 18px;
@@ -143,5 +143,37 @@ label #end:hover{
 }
 .line{
 text-align: right;
+width: 50%;
+}
+.menuU{
+   width: 50%;
+    text-align: center;
+       letter-spacing: 0.2px;
+        border-left: 2px solid gray;
+        border-right: 2px solid gray;
+        transition: 0.5s ease;
+        transform: translateX(0);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+        box-shadow: 10em;
+      margin-left: auto;
+      margin-right: 0;
+      visibility: hidden;
+      opacity: 0;
+}
+.menuU ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block; 
+    font-weight: 400;
+    text-transform: capitalize;
+} 
+.tab2:hover{
+    color: aqua;
+    font-size: 22px;
+}
+.menuU.active2{
+    visibility: visible;
+    opacity: 1;
 }
 

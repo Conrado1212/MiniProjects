@@ -43,3 +43,8 @@ $('#menu li').filter(function(){
     return '/' + $('a', this).attr('href') === path;
 // add class active to the item:
 }).addClass('active');
+
+function menuU(){
+    const toggleMenuU = document.querySelector('.menuU');
+    toggleMenuU.classList('active2');
+}
