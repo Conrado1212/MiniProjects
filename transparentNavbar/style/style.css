@@ -158,8 +158,12 @@ width: 50%;
         box-shadow: 10em;
       margin-left: auto;
       margin-right: 0;
-      visibility: hidden;
-      opacity: 0;
+    /* overflow: hidden; 
+     max-height: 0;
+       transition: max-height 0.5s;*/
+     visibility: hidden;
+     opacity: 0;
+    
 }
 .menuU ul li a{
     text-decoration: none;
@@ -168,12 +172,27 @@ width: 50%;
     font-weight: 400;
     text-transform: capitalize;
 } 
+.menuU h1{
+    font-size: 24px;
+    color: aliceblue;
+    text-align: center;
+    padding:  10px 0;
+    pointer-events: none;
+}
+.menuU hr{
+    color: aqua;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .tab2:hover{
     color: aqua;
     font-size: 22px;
 }
-.menuU.active2{
-    visibility: visible;
+.active2{
+ visibility: visible;
     opacity: 1;
+   /* max-height: 400px;*/
 }
 
