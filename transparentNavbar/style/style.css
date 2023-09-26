@@ -199,4 +199,14 @@ width: 50%;
     opacity: 1;
    /* max-height: 400px;*/
 }
-
+.footer{
+    bottom:0px;
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0.5rem;
+}

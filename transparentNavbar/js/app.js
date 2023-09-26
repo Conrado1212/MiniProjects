@@ -64,15 +64,18 @@ function menuU(){
 // });
 
 document.addEventListener("click", function(e){
-    var toggleMenuU = document.querySelector('.menuU');
+    
+    var MenuU = document.querySelector('.menuU.active2');
     var toggleMenuU2 = document.querySelector('.fa-regular.fa-user');
     console.log(e.target);
-    if(e.target !==toggleMenuU && e.target !==toggleMenuU2){
-        toggleMenuU.classList.remove('active2');
+    if(typeof(MenuU) !='undefined' && MenuU !=null){
+    if(e.target !==MenuU && e.target !==toggleMenuU2){
+        MenuU.classList.remove('active2');
        // toggleMenuU.style.visibility = "hidden";
         console.log(e.target);
         //&& e.target  !==toggleMenuU2
        // console.log(toggleMenuU.classList.contains('active2'));
        //&& toggleMenuU.classList.contains('active2') 
+    }
     }
 });
