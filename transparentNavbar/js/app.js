@@ -76,6 +76,7 @@ document.addEventListener("click", function(e){
         //&& e.target  !==toggleMenuU2
        // console.log(toggleMenuU.classList.contains('active2'));
        //&& toggleMenuU.classList.contains('active2') 
+       //check tomorrow if contains will be works for this shit
     }
     }
 });
