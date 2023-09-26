@@ -145,6 +145,10 @@ label #end:hover{
 text-align: right;
 width: 50%;
 }
+.line i:hover{
+    color: aqua;
+    font-weight: bolder;
+}
 .menuU{
    width: 50%;
     text-align: center;

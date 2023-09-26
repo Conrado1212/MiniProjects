@@ -67,9 +67,12 @@ document.addEventListener("click", function(e){
     var toggleMenuU = document.querySelector('.menuU');
     var toggleMenuU2 = document.querySelector('.fa-regular.fa-user');
     console.log(e.target);
-    if(e.target !==toggleMenuU  && toggleMenuU.classList.contains('active2') && !toggleMenuU2.contains(e.target)){
+    if(e.target !==toggleMenuU && e.target !==toggleMenuU2){
         toggleMenuU.classList.remove('active2');
+       // toggleMenuU.style.visibility = "hidden";
         console.log(e.target);
-        console.log(toggleMenuU.classList.contains('active2'));
+        //&& e.target  !==toggleMenuU2
+       // console.log(toggleMenuU.classList.contains('active2'));
+       //&& toggleMenuU.classList.contains('active2') 
     }
 });
