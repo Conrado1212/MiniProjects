@@ -3,8 +3,9 @@
                     <form class="inputek">
                         <input type="search"  class="input-field" name="search" placeholder="Search everywhere" required>
                         <button type="submit"><img src="img/search.png" alt=""></button>         
-                    </form>        
+                    </form>      
                 </div>
+
                 <div class="line" onclick="menuU()">
                     
                     <ul>

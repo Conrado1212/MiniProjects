@@ -80,3 +80,7 @@ document.addEventListener("click", function(e){
     }
     }
 });
+
+
+var xd = document.getElementById('w3review').innerHTML
+console.log(xd);
