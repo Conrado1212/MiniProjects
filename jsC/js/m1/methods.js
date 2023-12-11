@@ -10,7 +10,7 @@ let circle = {
 };
 
 
-let circle = {
+let circle5 = {
     radius: 100,
     center: {
         x: 0,
@@ -28,7 +28,7 @@ console.log(circle.getType());
 console.log(circle["getType"]() );
 
 
-let circle = {
+let circle4 = {
     radius: 100,
     center: {
         x: 0,
@@ -50,7 +50,7 @@ console.log(figure.getType()); // "unknown"!
 
 
 
-let circle = {
+let circle3 = {
     radius: 100,
     center: {
         x: 0,
@@ -61,7 +61,7 @@ let circle = {
     }
 };
 console.log(circle.getType());
-let figure = {...circle};
+let figure2 = {...circle};
 delete circle.radius;
 console.log(figure.radius);
 console.log(figure.getType()); // "circle"
@@ -72,10 +72,10 @@ let add = function (a,b) {
 }
 
 
-let add = (a,b) => a + b;
+let add2 = (a,b) => a + b;
 
 
-let circle = {
+let circle2 = {
     radius: 100,
     center: {
         x:0,
@@ -83,7 +83,7 @@ let circle = {
         show(){console.log(`${this.x}, ${this.y}`)}
     }
 }
-circle.center.show();
+circle2.center.show();
 
 
 
@@ -106,7 +106,7 @@ console.log(contact.tel);
 
 
 
-let contact = {
+let contact2 = {
     _age: 36,
    firstName : "David",
     lastName : "Taylor",
@@ -117,3 +117,9 @@ let contact = {
 console.log(contact.fullName);
 contact.age = -20;
 console.log(contact.age);
+
+
+
+let car = {make: 'Jeep', model: 'Cherokee'};
+
+console.log(car.make);
