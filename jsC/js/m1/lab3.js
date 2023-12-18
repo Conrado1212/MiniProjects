@@ -7,3 +7,13 @@
 // While creating an object, use the Image constructor prepared in the earlier task.
 
 // Test the script by calling the sequence:
+images.add('Mona Lisa', 'Leonardo da Vinci', 1503);
+images.add('The Last Supper', 'Leonardo da Vinci', 1495);
+images.add('The Starry Night', 'Vincent van Gogh', 1889);
+images.add('Mona Lisa', 'Leonardo da Vinci', 1503);
+images.show();
+// -> Mona Lisa (Leonardo da Vinci, 1503)
+// -> Last Supper (Leonardo da Vinci, 1495)
+// -> The Starry Night (Vincent van Gogh, 1889)
+images.clear();
+images.show();
