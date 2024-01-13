@@ -1,5 +1,18 @@
 // Write a function, deepComp, that will compare two objects given as arguments (deep comparison). Compare only properties (ignore methods), and consider the possibility of nesting (any number of levels).
-
+let deepComp = function(arg1, arg2) {
+    let val = Object.keys(arg1).length === Object.keys(arg2).length;
+    if(val) {
+        for(property in arg1) {
+            if(typeof(arg1[property]) === typeof(arg2[property])) { 
+                val = typeof(arg1[property]) === 'object' ? deepComp(arg1[property], arg2[property]) : arg1[property] === arg2[property]
+            } else {
+                val =false;
+            }
+            if(!val) break;
+        }
+    }
+    return val;
+}
 // Properties can also be objects and arrays. We are interested in the properties available during the usual enumeration.
 
 // For testing, use the following piece of code:
