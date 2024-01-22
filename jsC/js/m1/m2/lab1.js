@@ -11,7 +11,7 @@ class User {
         this.role = role;
         this.messages = [];
         this.courses = [];
-    };
+    }
 
 
 
