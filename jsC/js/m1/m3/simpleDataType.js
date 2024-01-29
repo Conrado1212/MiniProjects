@@ -67,3 +67,30 @@ console.log(`ne3 : ${typeof nr3} : ${ nr3}`); // -> nr3 : number : abcd
 
 let nr4 = Number("9e10000")
 console.log(`nr4 : ${typeof nr5} : ${ nr3}`); // -> nr4 : number : 9e10000
+
+
+let ab = 12345;
+console.log(ab.toExponential());   // -> 1.2345e+4
+console.log(ab.toExponential(1));  // -> 1.2e+4
+
+
+let nr1 = 10.55;
+console.log(nr1.toFixed(1)); // -> 10.6
+console.log(nr1.toFixed(0)); // -> 11
+console.log(nr1.toFixed(3)); // -> 10.550
+let nr5 = 2.55;
+console.log(nr5.toFixed(1)); // -> 2.5
+console.log(nr5.toFixed(20)); // -> 2.54999999999999982236
+console.log(((nr5 * 10).toFixed(0) / 10)); // -> 2.6
+
+let nr6 = 123456.789;
+console.log(nr6.toLocaleString("en-GB")); //-> 123,456.789
+console.log(nr6.toLocaleString("fr-FR")); //-> 123·456,789
+console.log(nr6.toLocaleString("de-DE")); //-> 123.456,789
+console.log(nr6.toLocaleString("ar-EG")); //-> ١٢٣٬٤٥٦٫٧٨٩
+console.log(nr6.toLocaleString("es-ES");
+    style: "currency",
+    currency: "EUR"
+})); //-> 123.456,79 €
+console.log(nr.toLocaleString());
+
