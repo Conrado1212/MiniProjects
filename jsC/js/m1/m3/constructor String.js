@@ -24,3 +24,4 @@ console.log(ipParts[0]); // -> 127
 let ipAddressStr2 = "127.0.0.1"
 let ipParts2 = ipAddressStr2.split("."); // -> ["127", "0", "0", "1"]
 console.log(ipParts2[0]); // -> 127
+
