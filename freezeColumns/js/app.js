@@ -19,11 +19,21 @@ function onElementAvailable(selector, callback) {
 
 
 
-//  var newElement = document.createElement("div"); 
-// // to add a class: 
-// // to add an id 
-// newElement.setAttribute("id", "xd"); 
-// // to add it to the body: 
-// document.body.appendChild(newElement); 
-// // or to add it to some element: 
-// document.getElementById("test").appendChild(newElement); 
+ var newElement = document.createElement("div"); 
+// to add a class: 
+console.log(newElement);
+// to add an id 
+newElement.setAttribute("id", "xd"); 
+console.log(newElement);
+// to add it to the body: 
+document.body.appendChild(newElement); 
+console.log(newElement);
+// or to add it to some element: 
+document.getElementById("test").appendChild(newElement); 
+
+document.getElementById('xd').style.cssText=
+`
+width: 100%;
+height: 25px;
+background-color: red;
+`
