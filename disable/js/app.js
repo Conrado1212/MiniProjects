@@ -82,4 +82,16 @@ $("#test tr td:first-child .input").on("keypress change keyup",function(){
 
 // })
 
+function sleepAndReturnTrue() {
+  return new Promise((resolve) => {
+      setTimeout(() => {
+          resolve(true);
+      }, 3000); // Czas oczekiwania w milisekundach (3 sekundy)
+  });
+}
 
+// Przykład użycia:
+(async () => {
+  const result = await sleepAndReturnTrue();
+  console.log(result); // Wyświetli "true" po 3 sekundach
+})();
